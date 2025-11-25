@@ -4,13 +4,15 @@ from .forms import GoalForm, AddAmountForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.core.mail import send_mail
+@login_required(login_url='/authentication/login')
 def add_goal(request):
     if request.method == 'POST':
         form = GoalForm(request.POST)
         if form.is_valid():
-            goal=form.save()
-            goal.owner=request.user
-            goal.save()
+            goal = form.save(commit=False)  # Don't save to database yet
+            goal.owner = request.user       # Set the owner first
+            goal.save()                     # Now save to database
+            messages.success(request, 'Goal created successfully!')
             return redirect('list_goals')
 
     form = GoalForm()

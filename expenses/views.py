@@ -149,11 +149,12 @@ def add_expense(request):
             
             total_expenses_today = get_expense_of_day(user) + float(amount)
             if total_expenses_today > daily_expense_limit:
-                subject = 'Daily Expense Limit Exceeded'
-                message = f'Hello {user.username},\n\nYour expenses for today have exceeded your daily expense limit. Please review your expenses.'
-                from_email = settings.EMAIL_HOST_USER
-                to_email = [user.email]
-                send_mail(subject, message, from_email, to_email, fail_silently=False)
+                # Email notification temporarily disabled - uncomment to enable with proper email setup
+                # subject = 'Daily Expense Limit Exceeded'
+                # message = f'Hello {user.username},\n\nYour expenses for today have exceeded your daily expense limit. Please review your expenses.'
+                # from_email = settings.EMAIL_HOST_USER
+                # to_email = [user.email]
+                # send_mail(subject, message, from_email, to_email, fail_silently=True)  # Changed to True to ignore email errors
                 messages.warning(request, 'Your expenses for today exceed your daily expense limit')
 
             Expense.objects.create(owner=request.user, amount=amount, date=date,

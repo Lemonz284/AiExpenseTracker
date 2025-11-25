@@ -18,6 +18,28 @@ coffee ,food,coffee
 concerts,entertainment,concerts
 corn,food,corn
 creamstone,food,creamstone
+headphones,electronics,headphones
+headphone,electronics,headphone
+earphones,electronics,earphones
+earbuds,electronics,earbuds
+speakers,electronics,speakers
+laptop,electronics,laptop
+phone,electronics,phone
+mobile,electronics,mobile
+tablet,electronics,tablet
+charger,electronics,charger
+cable,electronics,cable
+mouse,electronics,mouse
+keyboard,electronics,keyboard
+monitor,electronics,monitor
+t-shirt,shopping,shirt
+shirt,shopping,shirt
+pants,shopping,pants
+jeans,shopping,jeans
+jacket,shopping,jacket
+dress,shopping,dress
+skirt,shopping,skirt
+blouse,shopping,blouse
 dairy milk,food,dairy milk
 dentist,health,dentist
 dinner,food,dinner
@@ -205,3 +227,18 @@ paid to the barber shop,grooming,paid barber shop
 purchased cricket bat,sports,purchased cricket bat
 purchased groceries,groceries,purchased groceries
 purchased fruit and vegetables,food,purchased fruit vegetables
+belt,food,belt
+belt,food,belt
+belt,food,belt
+concerts,entertainment,concerts
+beauty parler,grooming,beauty parler
+mobile,electronics,mobile
+mobile,electronics,mobile
+mobile,electronics,mobile
+restaurant,dining,restaurant
+shoes,shopping,shoes
+cab,transportation,cab
+cab,transportation,cab
+dentist,health,dentist
+manicure,personal care,manicure
+movie,entertainment,movie
